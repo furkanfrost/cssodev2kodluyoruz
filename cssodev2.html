@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+</head>
+<style>
+    body {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f1f1f1;
+    }
+    .google-search {
+        text-align: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2px; 
+    }
+
+    img {
+        max-width: 150px;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    input {
+        padding: 10px;
+        width: 70%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #efecf3;
+        color: #000; 
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px; 
+    }
+
+    .google-table {
+        display: flex;
+        flex-direction: row; 
+        background-color: #42dff4;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        justify-content: space-between;
+        
+    }
+
+    .table-cell {
+        padding: 20px;
+        color: #000; 
+    }
+
+    .table-cell h2 {
+        font-size: 1.5em;
+    }
+
+    .table-cell p {
+        margin: 0.5em 0;
+    }
+
+    form .table-cell {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-bottom: 0.5em;
+    }
+
+    input {
+        padding: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    button .table-cell {
+        padding: 0.5em;
+        background-color: #fff;
+        color: #42d0f4;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .same-class{
+        margin: 1px;
+        display: flex;
+        flex-direction: column;
+        width: 1800px;
+    }
+    .same-class-2{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column; 
+        width: 100%; 
+        max-width: 1800px;
+        flex: 1;
+        
+    }
+    footer{
+        margin:20px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="same-class">
+            <div class="google-search">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+            <form action="https://www.google.com/search" method="GET" target="_blank">
+                <h4>Search the web using Google!</h4>
+                <input type="text" name="q" placeholder="Search Google">
+                <br>
+                <button type="submit">Google Search</button>
+                <button type="submit">I'm feeling lucky</button>
+            </form>
+        </div>
+        <div class="same-class-2">
+                <div class="google-table">
+                <div class="table-cell">
+                    <h2>Special Searches</h2>
+                    <a href="#">Stanford Search</a>
+                    <br>
+                    <a href="#">Linux Search</a>
+                </div>
+                <div class="table-cell">
+                    <h2>Help about google</h2>
+                    <a href="#">Company info</a>
+                    <br>
+                    <a href="#">Google logos</a>
+                </div>
+                <div class="table-cell" >
+                    <h2>Get Google! Updates Monthly:</h2>
+                    <form action="#" method="post" class="table-cell">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="your e-mail" required> <br>
+                        <button type="submit">Subscribe</button>
+                        <a href="#">
+                            <span style="margin-left: 10px;">Archive</span> 
+                        </a>
+                    </form>
+                </div>
+        </div>
+            <div class="same-class">
+                <footer> Copyright ©1992 Google Inc.</footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
